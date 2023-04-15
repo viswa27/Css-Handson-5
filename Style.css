@@ -243,6 +243,16 @@ h1 {
     background-image: url(./moon.png);
     background-size: cover;
     left: 80%;
+    animation: moon 10s linear infinite;
+}
+
+@keyframes moon {
+    0%,100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(30px);
+    }
 }
 
 .building {
@@ -278,7 +288,7 @@ h1 {
     height: 350px;
     left: 40%;
     margin-top: -26.8%;
-    padding-bottom: 8%;
+    padding-bottom: 8.2%;
 }
 
 .car{
