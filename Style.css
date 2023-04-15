@@ -1,0 +1,332 @@
+#background {
+    background-color: yellow;
+    text-align: center;
+}
+
+.list {
+    width: 60%;
+    position: relative;
+    left: 35%;
+    right: 35%;
+}
+
+li {
+    margin-bottom: 50px;
+    padding-left: 50px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.tiltx {
+    background-color: rgb(81, 137, 145);
+    animation: tilt-x 3s ease-in-out infinite;
+}
+
+@keyframes tilt-x {
+    0% {
+        transform: skewX(0deg);
+    }
+
+    25% {
+        transform: skewX(20deg);
+        animation-delay: 1s;
+    }
+
+    50% {
+        transform: skewX(0deg);
+    }
+
+    75% {
+        transform: skewX(-20deg);
+        animation-delay: 1s;
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+.tilty {
+    background-color: rgb(159, 159, 159);
+    animation: tilt-y 3s ease-in-out infinite;
+}
+
+@keyframes tilt-y {
+    0% {
+        transform: skewY(0deg);
+    }
+
+    25% {
+        transform: skewY(20deg);
+        animation-delay: 1s;
+    }
+
+    50% {
+        transform: skewY(0deg);
+    }
+
+    75% {
+        transform: skewY(-20deg);
+        animation-delay: 1s;
+    }
+
+    100% {
+        transform: skewY(0deg);
+    }
+}
+
+.rotate {
+    background-color: rgb(81, 137, 145);
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.stinky {
+    background-color: rgb(82, 138, 146);
+    animation: stink-y 3s infinite;
+    border: solid green 1px;
+}
+
+@keyframes stink-y {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0.6);
+    }
+}
+
+.stinkx {
+    background-color: rgb(155, 72, 55);
+    animation: stink-x 3s infinite;
+    border: solid green 1px;
+}
+
+@keyframes stink-x {
+
+    0%,
+    100% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(0.4);
+    }
+}
+
+.rotate180 {
+    background-color: rgb(98, 170, 78);
+    border: solid green 1px;
+    animation: rotate-180 3s ease-in-out infinite;
+}
+
+@keyframes rotate-180 {
+    23% {
+        transform: rotate(20deg);
+    }
+
+    66% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+a {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.newlist {
+    /* width: 150px; */
+    display: flex;justify-content: center;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(143, 198, 51);
+    margin-right: 50px;
+}
+
+.box1:hover {
+    width: 300px;
+}
+
+.width {
+    transition: width 2s;
+}
+
+.size:hover {
+    height: 300px;
+}
+
+.size {
+    transition: width 2s, height 4s;
+}
+
+.linear {
+    transition: width 2s linear;
+}
+
+.ease {
+    transition: width 2s ease;
+}
+
+.ease-in {
+    transition: width 2s ease-in;
+}
+
+.ease-out {
+    transition: width 2s ease-out;
+}
+
+.ease-in-out {
+    transition: width 2s ease-in-out;
+}
+
+#new {
+    background-image: url(./sky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px groove;
+    border-top-color: white;
+    border-bottom-width: white;
+    border-left-color: blueviolet;
+    border-right-color: crimson;
+    margin: 0%;
+    text-align: center;
+}
+
+.head1 {
+    background-color: red;
+}
+
+.head2 {
+    background-color: yellow;
+}
+
+.head3 {
+    background-color: green;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 0%;
+}
+
+.moon {
+    width: 200px;
+    height: 170px;
+    position: relative;
+    background-image: url(./moon.png);
+    background-size: cover;
+    left: 80%;
+}
+
+.building {
+    width: 100%;
+    height: 315px;
+    background-image: url(./building.png);
+    background-repeat: initial;
+    opacity: 0.8;
+    position: relative;
+    animation: building 10s linear infinite;
+}
+
+@keyframes building {
+    from {
+        background-position-x: 0%;
+    }
+    to {
+        background-position-x: 300%;
+    }
+}
+
+.road {
+    width: 100%;
+    height: 300px;
+    background-image: url(./1.png);
+    position: relative;
+    animation: building 4s linear infinite;
+}
+
+.tire {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    left: 40%;
+    margin-top: -26.8%;
+    padding-bottom: 8%;
+}
+
+.car{
+    background-image: url(./car2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    animation: car 4s infinite linear;
+    transform-origin: top;
+}
+
+@keyframes car {
+    0%, 100% {
+        transform: skewY(0deg);
+    }
+    30%,50%,70%,90%{
+        transform: skewY(1deg);
+    }
+    20%,40%,60%,80%{
+        transform: skewY(-1deg);
+    }
+}
+
+.wheel {
+    background-image: url(./wheel.png);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    animation: wheel 1s infinite linear;
+}
+
+.wheel1 { 
+    top: 185px;
+    left: 16.5%;
+}
+
+.wheel2 {
+    top: 185px;
+    left: 65.6%;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
