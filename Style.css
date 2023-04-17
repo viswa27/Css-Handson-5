@@ -248,16 +248,13 @@ h1 {
     z-index: 1;
     background-image: url(./moon.png);
     background-size: cover;
-    left: 80%;
-    animation: moon 20s linear infinite;
+    left: -5%;
+    animation: moon 30s linear infinite;
 }
 
 @keyframes moon {
-    0%,100%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(60px);
+    100%{
+        transform: translateX(1800px);
     }
 }
 
