@@ -247,7 +247,7 @@ h1 {
     background-image: url(./moon.png);
     background-size: cover;
     left: 80%;
-    animation: moon 10s linear infinite;
+    animation: moon 20s linear infinite;
 }
 
 @keyframes moon {
@@ -255,7 +255,7 @@ h1 {
         transform: translateX(0px);
     }
     50%{
-        transform: translateX(30px);
+        transform: translateX(60px);
     }
 }
 
@@ -280,7 +280,7 @@ h1 {
 }
 
 .road {
-    width: 1000%;
+    width: 300%;
     height: 200px;
     display: block;
     background-image: url(./road.jpg);
@@ -289,12 +289,12 @@ h1 {
     bottom: -175px;
     left: 0;
     right: 0;
-    animation: road 10s linear infinite;
+    animation: road 5s linear infinite;
 }
 
 @keyframes road {
     100%{
-        background-position-x: 2200px;
+        background-position-x: 3200px;
     }
 }
 
