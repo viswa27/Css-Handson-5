@@ -221,6 +221,7 @@ a {
     text-align: center;
     height: 96.5vh;
     width: 99%;
+    position: relative;
 }
 
 .head1 {
@@ -243,7 +244,8 @@ h1 {
 .moon {
     width: 200px;
     height: 170px;
-    position: relative;
+    position: absolute;
+    z-index: 1;
     background-image: url(./moon.png);
     background-size: cover;
     left: 80%;
@@ -266,8 +268,9 @@ h1 {
     background-repeat: repeat-x;
     display: block;
     opacity: 0.8;
-    position: relative;
-    bottom: -175px;
+    position: absolute;
+    z-index: 2;
+    bottom: 200px;
     left: 0;
     right: 0;
     animation: building 20s linear infinite;
@@ -285,8 +288,9 @@ h1 {
     display: block;
     background-image: url(./road.jpg);
     background-repeat: repeat-x;
-    position: relative;
-    bottom: -175px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
     left: 0;
     right: 0;
     animation: road 5s linear infinite;
@@ -299,11 +303,12 @@ h1 {
 }
 
 .tire {
-    position: relative;
+    position: absolute;
+    z-index: 4;
     width: 500px;
     height: 350px;
     left: 40%;
-    margin-top: -11%;
+    bottom: 25px;
 }
 
 .cup {
@@ -359,9 +364,6 @@ h1 {
 }
 
 @keyframes wheel {
-    from {
-        transform: rotate(0deg);
-    }
     to {
         transform: rotate(360deg);
     }
